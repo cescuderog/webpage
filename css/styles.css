@@ -126,7 +126,7 @@ button{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
   left: 33%;
   cursor: pointer;
@@ -153,7 +153,7 @@ transition-duration: 0.4s;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
   left: 33%;
   cursor: pointer;
