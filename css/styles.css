@@ -306,7 +306,7 @@ textarea{
        box-sizing: border-box;
        width: 350px;
        display: none;
-       position: fixed;
+       position: absolute;
        left: 50%;
        top: 25%;
        transform: translate(-50%, 5%);
