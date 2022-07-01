@@ -1,63 +1,156 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Claudio Escudero's Web Page</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gantari&family=Orbitron&family=Rock+Salt&display=swap" rel="stylesheet">
-    </head>
-  <body>
-    <div class="top-container">
-      <a href="/index2.html">
-      <button class="button-es">Español</button></a>
-      <button class="button disabled">English</button>
-      <h1>I'm Claudio Escudero</h1>
-      <h4>a automotive engineer and master in electric and hybrid vehicles</h4>
-      <img src="images/claudio.png" alt="claudioescudero-img" width="200" height="200">
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-third">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <i class="fa fa-language fa-lg" aria-hidden="true"></i><a class="language-link" href="/index2.html">ES</a>
+          <img src="images/claudio.png" alt="claudio-image">
+          </div>
+        <div class="w3-container">
+          <h2>Claudio Escudero Gamboa</h2>
+
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Automotive engineer and master in electric and hybrid vehicles</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Madrid, Spain</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Windows, Office, SAP</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
+          </div>
+          <p>Autocad, CarSim, TruckSim, Catia V5</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">
+              <div class="w3-center w3-text-white">70%</div>
+            </div>
+          </div>
+          <p>Solidworks, AVL Cruise, MatLab Simulink</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <p>CSS, HTML5, Phyton</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:40%">40%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>Spanish</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-center w3-teal" style="height:24px;width:100%">Native</div>
+          </div>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-center w3-teal" style="height:24px;width:85%">Fluent</div>
+          </div>
+          <p>Swedish</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-center w3-teal" style="height:24px;width:20%">Beginner</div>
+          </div>
+          <br>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-envelope fa-fw w3-margin-right w3-text-teal" aria-hidden="true"></i>Contact Me</b></p>
+          <button class="button-contact" onclick="openForm()">Contact</button></a>
+          <hr>
+          <div class="loginPopup">
+             <div class="formPopup" id="popupForm">
+            <form class="formContainer" id="my-form" action="https://formspree.io/f/xeqnwbee" method="POST">
+            <p class="w3-large w3-text-theme"><b><i class="fa fa-envelope fa-fw w3-margin-right w3-text-teal" aria-hidden="true"></i>Contact form</b></p>
+            <input type="text" name="name" placeholder="You name..." required=""></br>
+            <input type="text" name="last-name" placeholder="You last name..." required=""></br>
+            <input type="email" name="email" placeholder="You email..." required=""></br>
+            <textarea row="6" name="message" placeholder="You message..." required=""></textarea></br>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            <p id="my-form-status"></p>
+            </form>
+            </div>
+            </div>
+          <script src="/js/mypage.js"></script>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Homologation and Regulation Specialist / Nissan Chile and Nissan Peru</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2021</h6>
+          <p>Responsible for carrying out the entire approval process for new models that are intended to commercialize in Chile and Peru.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Demand planning responsible & Homologation responsible / Ditec Automoviles (Santiago Chile)</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2017</h6>
+          <p>Responsible of request units to be manufactured and imported to the different automobile manufacturers (Volvo, Jaguar, Land Rover). After a promotion I took over homologation responsible position.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Aftersales and Logistics assistant / Bruno Fritsch Dealer (Santiago Chile)</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2014</h6>
+          <p>Aftersales development, providing support and solution to fleet customers in periodic maintenance, product failures, guarantees, and training nationwide, for brands such as Toyota, Mitsubishi, Hyundai, Peugeot, Nissan, FCA group, Ford, among others.</p><br>
+        </div>
       </div>
-<div class="middle-container">
-  <div class="profile">
-    <img src="" alt="">
-    <h2>Hello</h2>
-    <p>Tank you for visitin my web page!</p></br> <p>I am an automotive mechanical engineer specialized in electric and hybrid vehicles.</p>
-  </div>
-  <hr>
-  <div class="skills">
-    <h2>My Skills</h2>
-    <div class="skill-row">
-      <img class="" src="" alt="">
-      <h3>Work Experience</h3>
-      <p>Nissan Chile & Peru.</p>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal" aria-hidden="true"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Universidad Politécnica de Madrid (UPM)</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - 2022</h6>
+          <p>Master of Automotive Engineering specialized in Hybrid and Electric Vehicles</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>École des Ponts – Paris Tech</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021</h6>
+          <p>Electric vehicles and Mobility course</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Universidad Tecnológica de Chile (INACAP)</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2007 - 2011</h6>
+          <p>Mechanical and Electronic Automotive Engineer</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
     </div>
-    <div class="skill-row">
-      <img class="" src="" alt="">
-      <h3>Higher education and certifications</h3>
-      <p>INACAP y UPM.</p>
-    </div>
+
+  <!-- End Grid -->
   </div>
-  <hr>
-  <div class="contact-me">
-    <h2>Get In Touch</h2>
-    <p>Please send my your message using the following form:</p>
-    <div class="container">
-    <form id="my-form" action="https://formspree.io/f/xeqnwbee" method="POST">
-      <input type="text" name="name" placeholder="You name..." required=""></br>
-      <input type="text" name="last-name" placeholder="You last name..." required=""></br>
-      <input type="email" name="email" placeholder="You email..." required=""></br>
-      <textarea row="6" name="message" placeholder="You message..." required=""></textarea></br>
-      <button class="button-shadow" type="submit">Send</button>
-      <p id="my-form-status"></p>
-    </form>
-    </div>
-  </form>
-  </div>
-  </div>
+
+  <!-- End Page Container -->
 </div>
-<div class="bottom-container">
-  <a class="footer-link" href="https://www.linkedin.com/in/claudio-escudero-gamboa-ba2777119">LinkedIn</a>
-  <p>© Claudio Escudero Gamboa.</p> </br>
-  </div>
-  <script src="/JS/mypage.js"></script>
-      </body>
-    </html>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on LinkedIn.</p>
+  <a href="https://www.linkedin.com/in/claudio-escudero-gamboa-ba2777119" title="linkedIn"><i class="fa fa-linkedin fa-2x w3-hover-opacity"></i></a>
+  <p>2022  -  Claudio Escudero Gamboa</p>
+</footer>
+
+</body>
+</html>
